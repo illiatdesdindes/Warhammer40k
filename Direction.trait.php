@@ -2,11 +2,11 @@
 
 trait Direction {
 	
-	public const UP		= 0;
-	public const RIGHT	= 1;
-	public const DOWN	= 2;
-	public const LEFT	= 3;
-	private $_direction	= 0;
+	public static $UP		= 0;
+	public static $RIGHT	= 1;
+	public static $DOWN		= 2;
+	public static $LEFT		= 3;
+	private $_direction		= 0;
 
 	public function turnRight() {
 		$this->_direction += 1;

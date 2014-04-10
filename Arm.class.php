@@ -3,12 +3,12 @@
 require_once('ArmLn.class.php');
 
 abstract class Arm {
-	public	name;
-	public	loads;
-	public	range_short;
-	public	range_interm;
-	public	range_long;
-	public	effect_zone;
+	public	$name;
+	public	$loads;
+	public	$range_short;
+	public	$range_interm;
+	public	$range_long;
+	public	$effect_zone;
 }
 
 

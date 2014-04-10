@@ -1,8 +1,8 @@
 <?php
 
 require_once('Arm.class.php');
+require_once('Direction.trait.php');
 
-require_once('ImperialFrigate.class.php');
 
 abstract class Ship {
 
@@ -19,7 +19,7 @@ abstract class Ship {
 	public 	$shield;
 	public	$arms;
 
-	public function __construct(string $shipName, int $x, int $y, int $direction, array $arms) {
+	public function __construct($shipName, $x, $y, $direction, array $arms) {
 		$this->name			= $shipName;
 		$this->arms			= $arms;
 		$this->_direction	= $direction;

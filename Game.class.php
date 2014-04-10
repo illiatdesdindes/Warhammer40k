@@ -1,6 +1,5 @@
 <?php
 
-const
 
 class Game {
 
@@ -8,7 +7,7 @@ class Game {
 	private	$_y;
 	private	$_objects = [];
 
-	public function __construct(int $x, int $y, array $objects) {
+	public function __construct($x, $y, array $objects) {
 		$this->_x = $x;
 		$this->_y = $y;
 		$this->_objects = $objects;
